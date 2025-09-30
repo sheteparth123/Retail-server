@@ -15,7 +15,7 @@ FROM openjdk:8-jdk-slim
 WORKDIR /app
 
 # Copy the built JAR from the build stage
-COPY --from=build /app/target/BillingsoftwareApplication.jar app.jar
+COPY --from=build /app/target/billingsoftware-0.0.1-SNAPSHOT.jar app.jar
 
 # Expose port 8080 (Spring Boot default)
 EXPOSE 8080
